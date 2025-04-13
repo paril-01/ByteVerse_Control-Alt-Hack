@@ -1,0 +1,25 @@
+{
+  "name": "shoptok-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for ShopTok on Base",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network base_testnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network base_mainnet",
+    "verify": "hardhat verify"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "@thirdweb-dev/contracts": "^3.5.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.17.1",
+    "hardhat-deploy": "^0.11.34"
+  }
+} 
